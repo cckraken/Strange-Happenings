@@ -200,6 +200,7 @@
     <Compile Include="Controllers\GenresController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TopicsController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -290,6 +291,11 @@
     <Content Include="Views\Genres\Details.cshtml" />
     <Content Include="Views\Genres\Edit.cshtml" />
     <Content Include="Views\Genres\Index.cshtml" />
+    <Content Include="Views\Topics\Create.cshtml" />
+    <Content Include="Views\Topics\Delete.cshtml" />
+    <Content Include="Views\Topics\Details.cshtml" />
+    <Content Include="Views\Topics\Edit.cshtml" />
+    <Content Include="Views\Topics\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

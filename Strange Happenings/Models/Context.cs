@@ -24,7 +24,7 @@ namespace Strange_Happenings.Models
         public DbSet<Article> Article { get; set; }
         public DbSet<Topic> Topic { get; set; }
         public DbSet<Review> Review { get; set; }
-
-        public System.Data.Entity.DbSet<Strange_Happenings.Models.Genre> Genres { get; set; }
+        public DbSet<Genre> Genre { get; set; }
+        
     }
 }

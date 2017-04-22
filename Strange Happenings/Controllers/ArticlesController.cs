@@ -17,7 +17,7 @@ namespace Strange_Happenings.Controllers
         // GET: Articles
         public ActionResult Index()
         {
-            var article = db.Article.Include(p => p.UserID);
+            var article = db.Article.Include(r => r.UserID);
             return View(article.ToList());
         }
 

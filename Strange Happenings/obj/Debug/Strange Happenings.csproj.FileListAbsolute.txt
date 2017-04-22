@@ -77,6 +77,5 @@ C:\Users\Dan\Desktop\Uni\BsC Computing\Year 2\Advanced Programming\Projects\Stra
 C:\Users\Dan\Desktop\Uni\BsC Computing\Year 2\Advanced Programming\Projects\Strange Happenings\Strange Happenings\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Dan\Desktop\Uni\BsC Computing\Year 2\Advanced Programming\Projects\Strange Happenings\Strange Happenings\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Dan\Desktop\Uni\BsC Computing\Year 2\Advanced Programming\Projects\Strange Happenings\Strange Happenings\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Dan\Desktop\Uni\BsC Computing\Year 2\Advanced Programming\Projects\Strange Happenings\Strange Happenings\obj\Debug\Strange Happenings.csprojResolveAssemblyReference.cache
 C:\Users\Dan\Desktop\Uni\BsC Computing\Year 2\Advanced Programming\Projects\Strange Happenings\Strange Happenings\obj\Debug\Strange Happenings.dll
 C:\Users\Dan\Desktop\Uni\BsC Computing\Year 2\Advanced Programming\Projects\Strange Happenings\Strange Happenings\obj\Debug\Strange Happenings.pdb
