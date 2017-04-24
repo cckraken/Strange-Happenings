@@ -48,7 +48,7 @@ namespace Strange_Happenings.Models
 
             //seed data for articles
             Article article2 = new Article();
-            article2.ArticleID = 1;
+            article2.ArticleID = 2;
             article2.ArticleName = "Too much salt?";
             article2.ArticleDescription = "How much salt is too much?";
             article2.UserID = 2;
@@ -57,59 +57,58 @@ namespace Strange_Happenings.Models
 
             //seed data for articles
             Article article3 = new Article();
-            article3.ArticleID = 1;
+            article3.ArticleID = 3;
             article3.ArticleName = "Ebola crisis";
             article3.ArticleDescription = "What can we do to help?";
             article3.UserID = 3;
             article3.GenreID = 3;
             context.Article.Add(article3);
 
-
-
-
-            //seed data for genres
-            Genre GenreName = new Genre();
-            GenreName.GenreID = 1;
-            GenreName.GenreName = "Football";
-
-            //seed data for genres
-            Genre GenreName2 = new Genre();
-            GenreName2.GenreID = 2;
-            GenreName2.GenreName = "Cooking";
-
-            //seed data for genres
-            Genre GenreName3 = new Genre();
-            GenreName3.GenreID = 3;
-            GenreName3.GenreName = "World events";
-
-
-
-
             //seed data for reviews
             Review Review1 = new Review();
-            Review1.ReviewID = 1;
+            Review1.ReviewID = 4;
             Review1.AuthorName = "Daniel Barrett";
             Review1.ReviewDescription = "Excellent game. Chelsea got lucky though.";
             Review1.ArticleID = 1;
             context.Review.Add(Review1);
 
             Review Review2 = new Review();
-            Review2.ReviewID = 2;
+            Review2.ReviewID = 5;
             Review2.AuthorName = "Matt Carlin";
             Review2.ReviewDescription = "I don't like any salt at all on my food.";
             Review2.ArticleID = 2;
             context.Review.Add(Review2);
 
             Review Review3 = new Review();
-            Review3.ReviewID = 3;
+            Review3.ReviewID = 6;
             Review3.AuthorName = "Tom jones";
             Review3.ReviewDescription = "Just donate money, I suppose? Unless you're flying to get training and fly out over there.";
             Review3.ArticleID = 3;
             context.Review.Add(Review3);
 
-            base.Seed(context);
+            //seed data for genres
+            Genre Genre1 = new Genre();
+            Genre1.GenreID = 6;
+            Genre1.GenreName = "Football";
+            context.Genre.Add(Genre1);
 
-        
+            //seed data for genres
+            Genre Genre2 = new Genre();
+            Genre2.GenreID = 7;
+            Genre2.GenreName = "Cooking";
+            context.Genre.Add(Genre2);
+
+            //seed data for genres
+            Genre Genre3 = new Genre();
+            Genre3.GenreID = 8;
+            Genre3.GenreName = "World events";
+            context.Genre.Add(Genre3);
+
+            base.Seed(context);
+            context.SaveChanges();
+
+
+
         }
     }
 }

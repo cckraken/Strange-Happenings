@@ -17,7 +17,7 @@ namespace Strange_Happenings.Controllers
         // GET: Articles
         public ActionResult Index()
         {
-            var articles = db.Article.Include(path => path.GenreID);
+            var articles = db.Article.Include(r => r.GenreID);
             return View(db.Article.ToList());
         }
 
@@ -34,13 +34,15 @@ namespace Strange_Happenings.Controllers
                 return HttpNotFound();
             }
 
+            //get all reviews about this article
+
             var ArticleReview = (from reviews in db.Review
                                  join Article in db.Article
                                  on reviews.ArticleID equals article.ArticleID
                                  where (reviews.ArticleID == article.ArticleID)
                                  select reviews);
 
-            List < Review > ReviewList = ArticleReview.ToList();
+            List <Review> ReviewList = ArticleReview.ToList();
             ViewBag.ReviewList = ReviewList;
             return View(article);
         }
