@@ -22,9 +22,8 @@ namespace Strange_Happenings.Models
 
         public DbSet<User> User { get; set; }
         public DbSet<Article> Article { get; set; }
-        public DbSet<Topic> Topic { get; set; }
         public DbSet<Review> Review { get; set; }
         public DbSet<Genre> Genre { get; set; }
-        
+
     }
 }

@@ -15,8 +15,5 @@ namespace Strange_Happenings.Models
         public virtual int ArticleID { get; set; }
         public virtual Article Article { get; set; }
 
-        //Reviews have one topic
-        public virtual int TopicID { get; set; }
-        public virtual Topic Topic { get; set; }
     }
 }

@@ -15,6 +15,10 @@ namespace Strange_Happenings.Models
         public virtual int UserID { get; set; }
         public virtual User User { get; set; }
 
+        //Article is linked to one genre
+        public virtual int GenreID { get; set; }
+        public virtual Genre Genre { get; set; }
+
     
     }
 }
