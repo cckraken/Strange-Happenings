@@ -1,12 +1,19 @@
-﻿body {
+﻿/*This is the CSS file for Strange Happenings*/
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #fff;
+}
+
+/*sets all site fonts to whatever is specified below*/
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -22,3 +29,33 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.descriptionView {
+    width: 30%;
+    height: 10%;
+}
+
+.page-holder {
+    height: 600px;
+    margin-top: 30px;
+}
+
+
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.ArticleReviews {
+    float: right;
+    height: 500px;
+    width: 50%;
+    border: 1px solid black;
+    margin-top: -160px;
+    margin-right: 10%;
+}
+
+.ArticleReviews {
+    text-align: center;
+}
+

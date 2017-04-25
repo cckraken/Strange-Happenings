@@ -11,7 +11,5 @@ namespace Strange_Happenings.Models
         //Each article has one genre
         public virtual int GenreID { get; set; }
         public virtual string GenreName { get; set; }
-
-      
     }
 }

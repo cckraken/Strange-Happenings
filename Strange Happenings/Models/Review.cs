@@ -15,7 +15,7 @@ namespace Strange_Happenings.Models
         public virtual int ArticleID { get; set; }
         public virtual Article Article { get; set; }
 
-
+        
 
     }
 }
