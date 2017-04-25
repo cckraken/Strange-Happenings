@@ -1,11 +1,15 @@
 ﻿@model Strange_Happenings.Models.Genre
 
 @{
-    ViewBag.Title = "Details";
+    //
 }
 
-<h2>Details</h2>
 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
 <div>
     <h4>Genre</h4>
     <hr />
@@ -21,6 +25,7 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.GenreID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+    </body>
+</html>

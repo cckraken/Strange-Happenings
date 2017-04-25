@@ -35,6 +35,26 @@
         </dd>
 
     </dl>
+
+    <article class="ArticleReviews">
+        <h4>Read the reviews that users have submitted for this article</h4>
+        <!--display reviews linked to this particular article-->
+        <dl class="dl-horizontal">
+            <dt>
+
+            </dt>
+            @foreach (var item in ViewBag.ReviewList)
+            {
+                <dd>
+                    @item.ReviewDescription
+                </dd>
+            }
+        </dl>
+        <p class="CreateNew">
+            @Html.ActionLink("Write review", "Create", "Reviews", new { id = Model.ArticleID }, null)
+        </p>
+
+    </article>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ArticleID }) |
