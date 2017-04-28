@@ -17,6 +17,7 @@ namespace Strange_Happenings.Controllers
         // GET: Genres
         public ActionResult Index()
         {
+            var genres = db.Genre.Include(r => r.GenreID);
             return View(db.Genre.ToList());
         }
 
@@ -32,6 +33,14 @@ namespace Strange_Happenings.Controllers
             {
                 return HttpNotFound();
             }
+
+            var ArticlesByGenre = (from article in db.Genre
+                                   join Article in db.Article
+                                   on article.GenreID equals Article.GenreID
+                                   where (Article.GenreID == article.GenreID)
+                                   select article);
+            List<Genre> ArticleList = ArticlesByGenre.ToList();
+            ViewBag.ArticleList = ArticleList;
             return View(genre);
         }
 

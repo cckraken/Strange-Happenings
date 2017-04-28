@@ -172,3 +172,4 @@ C:\Users\Dan\Desktop\Uni\BsC Computing\Year 2\Advanced Programming\Projects\SH\S
 C:\Users\Dan\Desktop\Uni\BsC Computing\Year 2\Advanced Programming\Projects\SH\Strange Happenings\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Dan\Desktop\Uni\BsC Computing\Year 2\Advanced Programming\Projects\SH\Strange Happenings\obj\Debug\Strange Happenings.dll
 C:\Users\Dan\Desktop\Uni\BsC Computing\Year 2\Advanced Programming\Projects\SH\Strange Happenings\obj\Debug\Strange Happenings.pdb
+C:\Users\Dan\Desktop\Uni\BsC Computing\Year 2\Advanced Programming\Projects\SH\Strange Happenings\obj\Debug\Strange Happenings.csprojResolveAssemblyReference.cache

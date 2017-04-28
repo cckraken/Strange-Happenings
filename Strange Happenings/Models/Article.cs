@@ -21,6 +21,7 @@ namespace Strange_Happenings.Models
         public virtual int GenreID { get; set; }
         public virtual Genre Genre { get; set; }
 
+
         //Article is linked to many reviews
         public IEnumerable<Review> Reviews { get; set; }
 

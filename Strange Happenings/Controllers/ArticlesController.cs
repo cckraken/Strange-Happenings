@@ -35,7 +35,9 @@ namespace Strange_Happenings.Controllers
             }
 
             //get all reviews about this article
-
+            //Declares a var called ArticleReview which stores all of the reviews for any given
+            //article. This is connected from the review table to the article table, and returns 
+            //all reviews for the article it is fetching data for via the viewbag..
             var ArticleReview = (from reviews in db.Review
                                  join Article in db.Article
                                  on reviews.ArticleID equals article.ArticleID
