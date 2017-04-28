@@ -36,6 +36,24 @@ namespace Strange_Happenings.Models
             user3.Speciality = "Music";
             context.User.Add(user3);
 
+            User user4 = new User();
+            user4.UserID = 4;
+            user4.UserName = "TMAY";
+            user4.UserFirstName = "Theresa";
+            user4.UserLastName = "May";
+            context.User.Add(user4);
+
+            User user5 = new User();
+            user5.UserID = 5;
+            user5.UserName = "Big Brown";
+            user5.UserFirstName = "Gordon";
+            user5.UserLastName = "Brown";
+
+            User user6 = new User();
+            user6.UserID = 6;
+            user6.UserName = "Emperor Palpamemes";
+            user6.UserFirstName = "Emperor";
+            user6.UserLastName = "Palpatene";
 
             //seed data for articles
             Article article1 = new Article();
@@ -64,6 +82,14 @@ namespace Strange_Happenings.Models
             article3.GenreID = 3;
             context.Article.Add(article3);
 
+            Article article4 = new Article();
+            article4.ArticleID = 4;
+            article4.ArticleName = "Favourite programming language?";
+            article4.ArticleDescription = "What's everyones favourite programming language? Mine is C#. Comment your favourites and why!";
+            article4.UserID = 4;
+            article4.GenreID = 4;
+            context.Article.Add(article4);
+
             //seed data for reviews
             Review Review1 = new Review();
             Review1.ReviewID = 4;
@@ -86,6 +112,13 @@ namespace Strange_Happenings.Models
             Review3.ArticleID = 3;
             context.Review.Add(Review3);
 
+            Review Review4 = new Review();
+            Review4.ReviewID = 7;
+            Review4.AuthorName = "Gordon Brown";
+            Review4.ReviewDescription = "HTMl is mine. It's so robust since becoming HTML5. I remember the days when I used HTML script. What a pain in the ass that was.";
+            Review4.ArticleID = 4;
+            context.Review.Add(Review4);
+
             //seed data for genres
             Genre Genre1 = new Genre();
             Genre1.GenreID = 6;
@@ -103,6 +136,11 @@ namespace Strange_Happenings.Models
             Genre3.GenreID = 8;
             Genre3.GenreName = "World events";
             context.Genre.Add(Genre3);
+
+            Genre Genre4 = new Genre();
+            Genre4.GenreID = 9;
+            Genre4.GenreName = "Programming";
+            context.Genre.Add(Genre4);
 
             base.Seed(context);
             context.SaveChanges();
