@@ -4,12 +4,13 @@ body {
     padding-top: 50px;
     padding-bottom: 20px;
     background-color: #1d1e1e;
+    background-image: url('/images/Background.jpg');
 }
 
 /*sets all site fonts to whatever is specified below*/
 * {
     font-family: Arial;
-    color: white;
+    color: black;
 
 }
 
