@@ -3,17 +3,20 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #fff;
+    background-color: #1d1e1e;
 }
 
 /*sets all site fonts to whatever is specified below*/
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial;
+    color: white;
+
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     width: 100%;
+    font-size: 12px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -61,4 +64,8 @@ textarea {
 
 .imagesmain {
     text-align: center;
+    border: none;
+    
 }
+
+
