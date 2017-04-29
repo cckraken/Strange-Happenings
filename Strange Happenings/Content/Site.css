@@ -3,8 +3,13 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #1d1e1e;
-    background-image: url('/images/Background.jpg');
+    background: #3061FF; /*Unsupported browsers*/    
+    background: -moz-linear-gradient( right, #3061FF, white, #007CFF, #3061FF); /* Firefox */
+    background: linear-gradient(to right, #3061FF, white, #007CFF, #3061FF ); /* Standard Syntax */
+
+
+
+    
 }
 
 /*sets all site fonts to whatever is specified below*/

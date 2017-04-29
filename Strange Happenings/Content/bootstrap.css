@@ -4409,7 +4409,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #333333;
-  background-color: transparent;
+  background-color:transparent;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -4932,9 +4932,10 @@ a.list-group-item.active > .badge,
   margin-bottom: 30px;
   font-size: 21px;
   font-weight: 200;
-  line-height: 2.1428571435;
+  line-height: 3;
   color: inherit;
-  background-color: #eeeeee;
+  background: linear-gradient(to left, #3061FF, white, #007CFF, #3061FF ); /* Standard Syntax */
+
 }
 
 .jumbotron h1 {
