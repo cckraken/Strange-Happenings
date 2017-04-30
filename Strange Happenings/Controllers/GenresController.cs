@@ -34,11 +34,11 @@ namespace Strange_Happenings.Controllers
                 return HttpNotFound();
             }
 
-            var ArticlesByGenre = (from article in db.Genre
+            var ArticlesByGenre = (from article in db.Article
                                    join Article in db.Article
-                                   on article.GenreID equals Article.GenreID
-                                   where (Article.GenreID == article.GenreID)
-                                   select article);
+                                   on genre.GenreID equals Article.GenreID
+                                   where (Article.GenreID == genre.GenreID)
+                                   select genre);
             List<Genre> ArticleList = ArticlesByGenre.ToList();
             ViewBag.ArticleList = ArticleList;
             return View(genre);
@@ -55,7 +55,7 @@ namespace Strange_Happenings.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "GenreID,GenreName")] Genre genre)
+        public ActionResult Create([Bind(Include = "GenreID, GenreName")] Genre genre)
         {
             if (ModelState.IsValid)
             {
